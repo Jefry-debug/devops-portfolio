@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DevOps portfolio showcasing AWS, Docker, Jenkins, GitHub, Docker Hub, Bash scripting and Uptime Kuma monitoring.">
+  <title>DevOps Portfolio | Jone Jefry</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <a class="logo" href="#home">JONE <span>JEFRY</span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+    <nav id="nav">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#project">Project 1</a>
+      <a href="#project2">Project 2</a>
+      <a href="#project3">Project 3</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">DEVOPS / CLOUD / CI-CD</p>
+        <h1>Building reliable<br><span>deployment pipelines.</span></h1>
+        <p class="lead">
+          DevOps-focused portfolio showcasing hands-on work with AWS, Docker, Kubernetes,
+          Jenkins, GitHub, Terraform, Prometheus and Grafana.
+        </p>
+        <div class="buttons">
+          <a class="btn primary" href="http://13.205.4.143" target="_blank" rel="noopener">Live Demo ↗</a>
+          <a class="btn secondary" href="https://github.com/Jefry-debug/devops-build" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+      </div>
+      <div class="terminal">
+        <div class="terminal-top"><span></span><span></span><span></span><b>devops@ec2</b></div>
+        <div class="terminal-body">
+          <p><i>$</i> git push origin dev</p>
+          <p class="muted">→ GitHub webhook triggered</p>
+          <p><i>$</i> docker build -t react-app .</p>
+          <p class="success">✓ Build successful</p>
+          <p><i>$</i> docker push dev:latest</p>
+          <p class="success">✓ Image pushed</p>
+          <p><i>$</i> curl http://localhost</p>
+          <p class="success">✓ Application UP</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="section-head">
+        <p class="eyebrow">01 / ABOUT</p>
+        <h2>DevOps through practical projects.</h2>
+      </div>
+      <div class="about-grid">
+        <p>
+          I am building practical DevOps experience by working with cloud infrastructure,
+          containerization, CI/CD automation, version control and monitoring. This portfolio
+          highlights a production-style React deployment project from source code to a
+          monitored application running on AWS EC2.
+        </p>
+        <div class="stats">
+          <div><strong>AWS</strong><span>Cloud deployment</span></div>
+          <div><strong>CI/CD</strong><span>Jenkins automation</span></div>
+          <div><strong>Docker</strong><span>Containerization</span></div>
+          <div><strong>Uptime</strong><span>Health monitoring</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="section-head">
+        <p class="eyebrow">02 / SKILLS</p>
+        <h2>Tools I work with.</h2>
+      </div>
+      <div class="skills-grid">
+        <article><b>AWS</b><span>EC2 · Security Groups</span></article>
+        <article><b>Docker</b><span>Dockerfile · Images · Containers</span></article>
+        <article><b>Docker Compose</b><span>Application deployment</span></article>
+        <article><b>Jenkins</b><span>CI/CD · Build automation</span></article>
+        <article><b>Git & GitHub</b><span>Branches · Webhooks · CLI</span></article>
+        <article><b>Docker Hub</b><span>Dev & private prod images</span></article>
+        <article><b>Bash</b><span>Build & deployment scripts</span></article>
+        <article><b>Uptime Kuma</b><span>HTTP monitoring · Gmail alerts</span></article>
+      </div>
+    </section>
+
+    <section class="section project-section" id="project">
+      <div class="section-head">
+        <p class="eyebrow">03 / FEATURED PROJECT</p>
+        <h2>Production-Ready React Deployment</h2>
+      </div>
+
+      <div class="project-card">
+        <div class="project-top">
+          <div>
+            <span class="tag">AWS · DOCKER · JENKINS</span>
+            <h3>React Application CI/CD Platform</h3>
+          </div>
+          <a class="arrow-link" href="https://github.com/Jefry-debug/devops-build" target="_blank" rel="noopener">Repository ↗</a>
+        </div>
+
+        <p class="project-description">
+          A complete DevOps workflow that builds, containerizes, publishes and deploys a React
+          application. GitHub pushes trigger Jenkins, development images are pushed to Docker Hub,
+          production images are separated into a private repository, and Uptime Kuma checks the
+          live application's health.
+        </p>
+
+        <div class="pipeline">
+          <div><span>01</span><b>GitHub</b><small>dev / main</small></div>
+          <div class="line"></div>
+          <div><span>02</span><b>Jenkins</b><small>CI/CD</small></div>
+          <div class="line"></div>
+          <div><span>03</span><b>Docker Hub</b><small>dev / prod</small></div>
+          <div class="line"></div>
+          <div><span>04</span><b>AWS EC2</b><small>Port 80</small></div>
+          <div class="line"></div>
+          <div><span>05</span><b>Uptime Kuma</b><small>Health check</small></div>
+        </div>
+
+        <div class="project-details">
+          <div>
+            <h4>Implementation</h4>
+            <ul>
+              <li>Multi-stage Docker build with Node.js and Nginx.</li>
+              <li>Docker Compose for repeatable deployment.</li>
+              <li><code>build.sh</code> and <code>deploy.sh</code> for automation.</li>
+              <li>GitHub <code>dev</code> and <code>main</code> branch workflow.</li>
+              <li>Jenkins webhook-triggered builds.</li>
+              <li>Docker Hub public dev and private prod repositories.</li>
+              <li>AWS EC2 deployment with restricted SSH access.</li>
+              <li>Uptime Kuma monitoring with Gmail SMTP notifications.</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Outcome</h4>
+            <div class="outcome">
+              <span>✓</span>
+              <p>Automated build → push → deploy workflow for a containerized React application.</p>
+            </div>
+            <div class="outcome">
+              <span>✓</span>
+              <p>Application exposed through HTTP port 80 and continuously health-checked.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="screenshots">
+          <h4>Project Screenshots</h4>
+          <p class="muted">Real implementation screenshots from the AWS, GitHub, Docker, deployment and monitoring stages of the project.</p>
+          <div class="shot-grid">
+            <figure><img src="assets/screenshots/deployed-app.png" alt="Deployed React Application"><figcaption>Live React application</figcaption></figure>
+            <figure><img src="assets/screenshots/ec2-instance.png" alt="AWS EC2 Console"><figcaption>AWS EC2 instance</figcaption></figure>
+            <figure><img src="assets/screenshots/security-group-2.png" alt="AWS Security Group"><figcaption>AWS Security Group rules</figcaption></figure>
+            <figure><img src="assets/screenshots/github-repository.png" alt="GitHub Repository"><figcaption>GitHub repository</figcaption></figure>
+            <figure><img src="assets/screenshots/github-webhook.png" alt="GitHub Webhook"><figcaption>GitHub webhook</figcaption></figure>
+            <figure><img src="assets/screenshots/dockerfile.png" alt="Dockerfile"><figcaption>Dockerfile</figcaption></figure>
+            <figure><img src="assets/screenshots/build-sh.png" alt="Docker Build Script"><figcaption>build.sh</figcaption></figure>
+            <figure><img src="assets/screenshots/deploy-sh.png" alt="Docker Deploy Script"><figcaption>deploy.sh</figcaption></figure>
+            <figure><img src="assets/screenshots/git-branches.png" alt="Git Branches"><figcaption>Git branches</figcaption></figure>
+            <figure><img src="assets/screenshots/git-commit-history-dev.png" alt="Dev Commit History"><figcaption>Dev commit history</figcaption></figure>
+            <figure><img src="assets/screenshots/git-commit-history-main.png" alt="Main Commit History"><figcaption>Main commit history</figcaption></figure>
+            <figure><img src="assets/screenshots/uptime-kuma-dashboard.png" alt="Uptime Kuma Dashboard"><figcaption>Uptime Kuma dashboard</figcaption></figure>
+            <figure><img src="assets/screenshots/uptime-monitor-up.png" alt="Uptime Kuma Monitor Up"><figcaption>Application health: UP</figcaption></figure>
+            <figure><img src="assets/screenshots/monitoring-intervals.png" alt="Monitoring Interval"><figcaption>Monitoring interval</figcaption></figure>
+            <figure><img src="assets/screenshots/uptime-kuma-email-alerts.png" alt="Uptime Kuma Email Alerts"><figcaption>Email alert configuration</figcaption></figure>
+            <figure><img src="assets/screenshots/monitoring-email-alert.png" alt="Monitoring Email Alert"><figcaption>Email alert received</figcaption></figure>
+          </div>
+        </div></div>
+      </div>
+    </section>
+
+    <section class="section project-section" id="project2">
+      <div class="section-head">
+        <p class="eyebrow">04 / PROJECT 2</p>
+        <h2>Trend – Cloud-Native CI/CD Deployment & Monitoring</h2>
+      </div>
+      <div class="project-card">
+        <div class="project-top"><div><span class="tag">AWS · TERRAFORM · JENKINS · DOCKER · EKS · GRAFANA</span><h3>Trend / Trendify DevOps Platform</h3></div><span class="tag">COMPLETED</span></div>
+        <p class="lead">An end-to-end DevOps workflow covering GitHub source control, Terraform infrastructure provisioning, Jenkins CI/CD, Docker/DockerHub containerization, Kubernetes/EKS deployment, and Prometheus/Grafana monitoring.</p>
+        <div class="project-details">
+          <div><h4>Implementation</h4><ul>
+            <li>Provisioned AWS infrastructure with Terraform.</li>
+            <li>Configured Jenkins Pipeline from SCM using the Trend GitHub repository, main branch and Jenkinsfile.</li>
+            <li>Built the application Docker image and published it to DockerHub.</li>
+            <li>Deployed Trendify to Kubernetes/EKS with 2/2 application replicas running.</li>
+            <li>Exposed the application through a Kubernetes LoadBalancer and validated the running application.</li>
+            <li>Used Prometheus and Node Exporter metrics with Grafana dashboards for CPU, memory, disk and network monitoring.</li>
+          </ul></div>
+          <div><h4>Technology Stack</h4><div class="skills-grid"><article><b>AWS</b><span>EC2 · EKS</span></article><article><b>Terraform</b><span>Infrastructure as Code</span></article><article><b>Jenkins</b><span>CI/CD Pipeline</span></article><article><b>Docker</b><span>Containerization</span></article><article><b>Kubernetes</b><span>Deployment & Service</span></article><article><b>Prometheus</b><span>Metrics collection</span></article><article><b>Node Exporter</b><span>Host metrics</span></article><article><b>Grafana</b><span>Monitoring dashboards</span></article></div></div>
+        </div>
+        <div class="buttons"><a class="btn primary" href="https://github.com/Jefry-debug/Trend" target="_blank" rel="noopener">Trend GitHub ↗</a></div>
+        <div class="screenshots"><h4>Project 2 Evidence</h4><p class="muted">Screenshots from the GUVI Trend DevOps project report, covering Jenkins, GitHub, Terraform, Kubernetes/EKS, DockerHub, the deployed application and Grafana/Node Exporter monitoring.</p>
+          <div class="shot-grid">
+            <figure><img src="assets/screenshots/project2/figure-1.png" alt="Jenkins Pipeline – Git SCM and repository" loading="lazy"><figcaption>Figure 1: Jenkins Pipeline – Git SCM and repository</figcaption></figure>
+            <figure><img src="assets/screenshots/project2/figure-2.png" alt="Jenkins Pipeline – main branch and Jenkinsfile" loading="lazy"><figcaption>Figure 2: Jenkins Pipeline – main branch and Jenkinsfile</figcaption></figure>
+            <figure><img src="assets/screenshots/project2/figure-3.png" alt="Jenkinsfile stored in GitHub" loading="lazy"><figcaption>Figure 3: Jenkinsfile stored in GitHub</figcaption></figure>
+            <figure><img src="assets/screenshots/project2/figure-4.png" alt="Grafana Kubernetes Cluster Dashboard – CPU and Memory" loading="lazy"><figcaption>Figure 4: Grafana Kubernetes Cluster Dashboard – CPU and Memory</figcaption></figure>
+            <figure><img src="assets/screenshots/project2/figure-5.png" alt="Grafana Kubernetes Cluster Dashboard – Quota and Memory" loading="lazy"><figcaption>Figure 5: Grafana Kubernetes Cluster Dashboard – Quota and Memory</figcaption></figure>
+            <figure><img src="assets/screenshots/project2/figure-6.png" alt="Grafana Kubernetes Cluster Dashboard – Network" loading="lazy"><figcaption>Figure 6: Grafana Kubernetes Cluster Dashboard – Network</figcaption></figure>
+            <figure><img src="assets/screenshots/project2/figure-7.png" alt="Grafana Kubernetes Node/Pods Dashboard – CPU" loading="lazy"><figcaption>Figure 7: Grafana Kubernetes Node/Pods Dashboard – CPU</figcaption></figure>
+            <figure><img src="assets/screenshots/project2/figure-8.png" alt="Grafana Kubernetes Node/Pods Dashboard – Memory" loading="lazy"><figcaption>Figure 8: Grafana Kubernetes Node/Pods Dashboard – Memory</figcaption></figure>
+            <figure><img src="assets/screenshots/project2/figure-9.png" alt="Kubernetes deployment and cluster verification" loading="lazy"><figcaption>Figure 9: Kubernetes deployment and cluster verification</figcaption></figure>
+            <figure><img src="assets/screenshots/project2/figure-10.png" alt="Kubernetes pods and LoadBalancer service" loading="lazy"><figcaption>Figure 10: Kubernetes pods and LoadBalancer service</figcaption></figure>
+            <figure><img src="assets/screenshots/project2/figure-11.png" alt="Node Exporter Dashboard – CPU and Memory" loading="lazy"><figcaption>Figure 11: Node Exporter Dashboard – CPU and Memory</figcaption></figure>
+            <figure><img src="assets/screenshots/project2/figure-12.png" alt="Node Exporter Dashboard – Disk" loading="lazy"><figcaption>Figure 12: Node Exporter Dashboard – Disk</figcaption></figure>
+            <figure><img src="assets/screenshots/project2/figure-13.png" alt="DockerHub – latest application image" loading="lazy"><figcaption>Figure 13: DockerHub – latest application image</figcaption></figure>
+            <figure><img src="assets/screenshots/project2/figure-14.png" alt="Trendify React application running" loading="lazy"><figcaption>Figure 14: Trendify React application running</figcaption></figure>
+            <figure><img src="assets/screenshots/project2/figure-15.png" alt="GitHub repository after project push" loading="lazy"><figcaption>Figure 15: GitHub repository after project push</figcaption></figure>
+            <figure><img src="assets/screenshots/project2/figure-16.png" alt="Git push and repository update" loading="lazy"><figcaption>Figure 16: Git push and repository update</figcaption></figure>
+            <figure><img src="assets/screenshots/project2/figure-17.png" alt="AWS Console – Jenkins server and DevOps infrastructure" loading="lazy"><figcaption>Figure 17: AWS Console – Jenkins server and DevOps infrastructure</figcaption></figure>
+            <figure><img src="assets/screenshots/project2/figure-18.png" alt="Terraform initialization and validation" loading="lazy"><figcaption>Figure 18: Terraform initialization and validation</figcaption></figure>
+            <figure><img src="assets/screenshots/project2/figure-19.png" alt="Terraform infrastructure plan" loading="lazy"><figcaption>Figure 19: Terraform infrastructure plan</figcaption></figure>
+            <figure><img src="assets/screenshots/project2/figure-20.png" alt="Terraform plan/resources" loading="lazy"><figcaption>Figure 20: Terraform plan/resources</figcaption></figure>
+            <figure><img src="assets/screenshots/project2/figure-21.png" alt="Terraform apply – 7 resources created" loading="lazy"><figcaption>Figure 21: Terraform apply – 7 resources created</figcaption></figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section project-section" id="project3">
+      <div class="section-heading"><p class="eyebrow">PROJECT 3</p><h2>Mindtrack – Production Application Deployment using DevOps</h2><p>A production-oriented DevOps deployment workflow covering GitHub, Docker, Docker Hub, Jenkins CI/CD, Kubernetes, AWS EKS and CloudWatch monitoring.</p></div>
+      <div class="project-card">
+        <div class="project-meta"><span class="pill">Completed</span><a href="https://github.com/Jefry-debug/Mindtrack" target="_blank" rel="noopener">GitHub Repository ↗</a></div>
+        <h3>Technologies Used</h3>
+        <div class="tags"><span>AWS EC2</span><span>GitHub</span><span>Docker</span><span>Docker Hub</span><span>Jenkins</span><span>Kubernetes</span><span>AWS EKS</span><span>CloudWatch</span><span>Nginx</span><span>Linux</span></div>
+        <h3>What I Implemented</h3>
+        <ul>
+          <li>Created and maintained the Mindtrack GitHub repository containing Docker and Kubernetes configuration files.</li>
+          <li>Containerized the production-ready <code>dist/</code> files using Nginx and built the Docker image with <code>docker build -t brain-app .</code>.</li>
+          <li>Tagged and pushed <code>jefryjo/mindtrack:latest</code> to Docker Hub.</li>
+          <li>Configured Jenkins on AWS EC2 to clone the repository, build the Docker image, authenticate to Docker Hub, push the image and deploy to Kubernetes.</li>
+          <li>Created Kubernetes Deployment and LoadBalancer Service configuration and prepared the application for AWS EKS using <code>eksctl</code> and <code>kubectl</code>.</li>
+          <li>Used Amazon CloudWatch for monitoring AWS resources and EC2 metrics.</li>
+        </ul>
+        <h3>DevOps Workflow</h3>
+        <div class="workflow"><span>GitHub</span><b>→</b><span>Jenkins</span><b>→</b><span>Docker</span><b>→</b><span>Docker Hub</span><b>→</b><span>Kubernetes / EKS</span><b>→</b><span>CloudWatch</span></div>
+        <h3>Challenges Solved</h3>
+        <ul>
+          <li>Resolved Jenkins Docker daemon permission errors by adding Jenkins to the Docker group.</li>
+          <li>Corrected the Jenkins Git configuration to use the <code>main</code> branch.</li>
+          <li>Configured AWS credentials for Jenkins and verified access with <code>aws sts get-caller-identity</code>.</li>
+          <li>Corrected Docker Hub authentication using <code>--password-stdin</code> and Jenkins credentials.</li>
+          <li>Changed the Docker repository from uppercase <code>jefryjo/Mindtrack</code> to lowercase <code>jefryjo/mindtrack</code>.</li>
+          <li>Reviewed and configured required EKS IAM permissions after EKS API permission errors.</li>
+        </ul>
+        <div class="live-note"><strong>Live URL:</strong> <a href="http://aba9082c5125d43038d4e2a3cf5cd940-1875713444.ap-south-1.elb.amazonaws.com" target="_blank" rel="noopener">Open deployed Mindtrack application ↗</a></div>
+        <div class="project3-evidence">
+          <h3>Project 3 Screenshots</h3>
+          <p class="muted">Real implementation evidence covering GitHub source code, Docker Hub, Jenkins CI/CD, AWS EKS, Kubernetes deployment, LoadBalancer exposure, the running application and CloudWatch metrics.</p>
+          <div class="shot-grid">
+            <figure><img src="assets/screenshots/project3/github-repository.png" alt="Mindtrack GitHub repository" loading="lazy"><figcaption>GitHub repository – Mindtrack project</figcaption></figure>
+            <figure><img src="assets/screenshots/project3/github-source-code.png" alt="Mindtrack GitHub source code and files" loading="lazy"><figcaption>GitHub repository – source files and DevOps configuration</figcaption></figure>
+            <figure><img src="assets/screenshots/project3/docker-registry-1.png" alt="Docker Hub repositories showing Mindtrack image" loading="lazy"><figcaption>Docker Hub – Mindtrack repository</figcaption></figure>
+            <figure><img src="assets/screenshots/project3/docker-registry-2.png" alt="Docker Hub Mindtrack latest tag" loading="lazy"><figcaption>Docker Hub – latest image tag</figcaption></figure>
+            <figure><img src="assets/screenshots/project3/jenkins-console-1.png" alt="Jenkins console output showing GitHub checkout" loading="lazy"><figcaption>Jenkins – repository checkout and pipeline execution</figcaption></figure>
+            <figure><img src="assets/screenshots/project3/jenkins-console-2.png" alt="Jenkins console output showing successful Docker push" loading="lazy"><figcaption>Jenkins – Docker image push completed</figcaption></figure>
+            <figure><img src="assets/screenshots/project3/jenkins-logs-docker.png" alt="Jenkins service status and Docker container" loading="lazy"><figcaption>Jenkins service and Docker container status</figcaption></figure>
+            <figure><img src="assets/screenshots/project3/eks-cluster-run.png" alt="EKS cluster creation with eksctl" loading="lazy"><figcaption>AWS EKS – cluster creation with eksctl</figcaption></figure>
+            <figure><img src="assets/screenshots/project3/cluster-nodes.png" alt="EKS worker nodes ready" loading="lazy"><figcaption>AWS EKS – worker nodes in Ready state</figcaption></figure>
+            <figure><img src="assets/screenshots/project3/kubernetes-deployment.png" alt="Kubernetes deployment pods and service" loading="lazy"><figcaption>Kubernetes – deployment, pods and service</figcaption></figure>
+            <figure><img src="assets/screenshots/project3/kubernetes-loadbalancer.png" alt="Kubernetes LoadBalancer service" loading="lazy"><figcaption>Kubernetes – LoadBalancer service with external endpoint</figcaption></figure>
+            <figure><img src="assets/screenshots/project3/running-browser.png" alt="Mindtrack application running in browser" loading="lazy"><figcaption>Live application – Mindtrack running in browser</figcaption></figure>
+            <figure><img src="assets/screenshots/project3/cloud-watch-1.png" alt="AWS CloudWatch CPU utilization metrics" loading="lazy"><figcaption>CloudWatch – CPUUtilization metrics</figcaption></figure>
+            <figure><img src="assets/screenshots/project3/cloud-watch-2.png" alt="AWS CloudWatch NetworkIn metrics" loading="lazy"><figcaption>CloudWatch – NetworkIn metrics</figcaption></figure>
+            <figure><img src="assets/screenshots/project3/cloud-watch-3.png" alt="AWS CloudWatch NetworkOut metrics" loading="lazy"><figcaption>CloudWatch – NetworkOut metrics</figcaption></figure>
+            <figure><img src="assets/screenshots/project3/cloud-watch-4.png" alt="AWS CloudWatch status check failed metrics view" loading="lazy"><figcaption>CloudWatch – EC2 status-check metrics</figcaption></figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="contact-card">
+        <div>
+          <p class="eyebrow">05 / CONTACT</p>
+          <h2>Let's connect.</h2>
+          <p>Open to DevOps, Cloud and junior infrastructure opportunities.</p>
+        </div>
+        <div class="contact-links">
+          <a href="https://github.com/Jefry-debug" target="_blank" rel="noopener">GitHub ↗</a>
+          <a href="mailto:jefryjone@gmail.com">Email ↗</a>
+          <a href="https://www.linkedin.com/in/jone-jefry/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© <span id="year"></span> Jone Jefry. Built with HTML, CSS & JavaScript.</span>
+    <span>DevOps Portfolio</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
